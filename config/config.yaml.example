@@ -1,0 +1,76 @@
+# ============================================
+# GENESIS_ENGINE - MAIN CONFIGURATION
+# ============================================
+
+app:
+  name: Genesis Engine
+  version: "1.0.0"
+
+ai:
+  provider: "${AI_PROVIDER:-ollama}"
+  models:
+    default: "${OLLAMA_MODEL:-llama3.2:latest}"
+    coding: codellama:latest
+    fast: mistral:latest
+  temperature: 0.7
+  maxTokens: 4096
+  fallback:
+    - provider: groq
+      model: llama-3.1-70b-versatile
+    - provider: openrouter
+      model: meta-llama/llama-3.1-70b-instruct
+
+gateway:
+  host: "127.0.0.1"
+  port: "${PORT:-3000}"
+  cors:
+    enabled: true
+    allowedOrigins: "${ALLOWED_ORIGINS:-http://localhost:3000}"
+
+auth:
+  enabled: true
+  apiToken: "${API_TOKEN}"
+  rateLimit:
+    enabled: true
+    max: 100
+    windowMs: 60000
+
+channels:
+  telegram:
+    enabled: false
+  discord:
+    enabled: false
+  whatsapp:
+    enabled: false
+
+database:
+  provider: supabase
+
+memory:
+  type: local
+  encryption: true
+  path: ./data/memory
+  dreaming:
+    enabled: true
+    interval: daily
+
+sandbox:
+  enabled: true
+  allowedPaths:
+    - ./workspace
+    - ./data
+  blockedCommands:
+    - sudo
+    - chmod 777
+    - "curl | sh"
+    - "wget | sh"
+
+heartbeat:
+  enabled: false
+  interval: 30
+
+logging:
+  level: "${LOG_LEVEL:-info}"
+  file:
+    enabled: true
+    path: ./logs/genesis.log

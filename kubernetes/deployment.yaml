@@ -1,0 +1,20 @@
+# Placeholder for Kubernetes deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: genesis-engine
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: genesis-engine
+  template:
+    metadata:
+      labels:
+        app: genesis-engine
+    spec:
+      containers:
+      - name: genesis-engine
+        image: genesis-engine:latest
+        ports:
+        - containerPort: 3000

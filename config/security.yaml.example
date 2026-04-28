@@ -1,0 +1,12 @@
+# ============================================
+# SECURITY HARDENING
+# ============================================
+
+# rateLimit:
+#   max: 100
+#   windowMs: 60000
+#
+# sandbox:
+#   enabled: true
+#   allowedPaths: ["./workspace"]
+#   blockedCommands: ["sudo", "chmod 777"]

@@ -1,0 +1,10 @@
+# ============================================
+# AI PROVIDER SETTINGS
+# Override the main config here.
+# ============================================
+
+# Example: Use Groq as primary
+# provider: groq
+# ollama:
+#   url: http://localhost:11434
+#   model: llama3.2

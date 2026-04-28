@@ -1,0 +1,11 @@
+# ============================================
+# CHANNEL SETTINGS
+# ============================================
+
+# telegram:
+#   botToken: "your_bot_token"
+#   allowedUserIds: ["your_user_id"]
+#
+# discord:
+#   botToken: "your_bot_token"
+#   allowedGuilds: ["guild_id"]

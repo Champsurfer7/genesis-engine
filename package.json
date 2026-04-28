@@ -1,0 +1,17 @@
+{
+  "name": "@champ/genesis-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Genesis Engine – the brains of the RepoCraft ecosystem",
+  "scripts": {
+    "dev": "node src/index.js",
+    "start": "node src/index.js",
+    "new": "node scripts/scaffold-new-project.js",
+    "env:check": "node scripts/validate-env.js"
+  },
+  "author": "Warren Champion <champsurfer@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}

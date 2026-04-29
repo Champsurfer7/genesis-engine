@@ -1,5 +1,16 @@
 # 🌀 GENESIS ENGINE
-
+<p align="center">
+  <a href="https://github.com/sponsors/Champsurfer7">
+    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-red?logo=github&style=for-the-badge" alt="Sponsor Champsurfer7" />
+  </a>
+  <a href="https://ko-fi.com/champsurfer">
+    <img src="https://img.shields.io/badge/Ko--fi-Buy%20me%20a%20coffee-blue?logo=kofi&style=for-the-badge" alt="Ko-fi" />
+  </a>
+  <a href="https://www.paypal.com/paypalme/champsurfer">
+    <img src="https://img.shields.io/badge/PayPal-Donate-blue?logo=paypal&style=for-the-badge" alt="PayPal" />
+  </a>
+</p>
+<br>
 > The ultimate secure, free-tier-optimized AI assistant framework
 
 Built by **Warren Champion** | **Amazing Global Solutions**  
